@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg_color">
+
+    <ImageView
+        android:id="@+id/iv_lang"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_margin="11dp"
+        android:src="@drawable/ic_uzb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O`zbekcha"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/iv_lang"
+        app:layout_constraintTop_toTopOf="@id/iv_lang"
+        app:layout_constraintBottom_toBottomOf="@id/iv_lang"/>
+
+    <CheckBox
+        android:id="@+id/isLangChecked"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="15dp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:button="@drawable/checked_lang"
+        android:buttonTint="@color/check_mark_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

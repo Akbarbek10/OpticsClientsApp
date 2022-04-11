@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OpticsClientsApp" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#1A242F</item>
+        <item name="colorPrimaryVariant">#1A242F</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.OpticsClientsApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#4AA2C5</item>
+        <item name="colorControlActivated">#4AA2C5</item>
+        <item name="android:windowBackground">@color/main_bg_color</item>
+        <item name="android:textColor">#4AA2C5</item>
+        <item name="android:textColorSecondary">#FAFAFA</item>
+        <item name="android:textColorPrimary">#B7BABD</item>
+        <item name="android:textColorSecondaryInverse">#DBDCDD</item>
+        <item name="android:textColorPrimaryInverse">#EFF0F1</item>
+
+    </style>
+</resources>

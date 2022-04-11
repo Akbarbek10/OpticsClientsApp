@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="toolbar_color">#16C3BB</color>
+    <color name="main_bg_color">#F1F1F1</color>
+    <color name="item_card_color">#FFFFFF</color>
+    <color name="notify_item_card_color">#00FFF3</color>
+    <color name="name_txt_color">#444444</color>
+    <color name="phone_txt_color">#959595</color>
+    <color name="title_desc_txt_color">#333333</color>
+    <color name="desc_txt_color">#757575</color>
+    <color name="card_shadow_color">#ECECEC</color>
+    <color name="et_title_txt">#0A5956</color>
+    <color name="fab_normal">#018F80</color>
+    <color name="fab_pressed">#03A695</color>
+    <color name="fab_ripple">#99FFFFFF</color>
+    <color name="edit_btn_unpressed">#FAFAFA</color>
+    <color name="edit_btn_pressed">#EDEDED</color>
+    <color name="input_color">#F7FAFE</color>
+    <color name="input_stroke_enabled">#3A8181</color>
+    <color name="input_stroke">#D5D3D4</color>
+    <color name="et_txt_color">#000000</color>
+    <color name="et_hint_txt_color">#8E9297</color>
+
+    <color name="search_color">#FAFAFA</color>
+    <color name="icon_human_color">#2d3e50</color>
+    <color name="icons_color">#0A5956</color>
+    <color name="icon_notes_color">#333333</color>
+    <color name="icon_edit_color">#373737</color>
+    <color name="frame_time">#FAFAFA</color>
+    <color name="gender_unselected">#F7FAFE</color>
+    <color name="gender_txt_selected">#000000</color>
+    <color name="line_color">#EDEDED</color>
+    <color name="search_icon_colors">#0A0A0A</color>
+    <color name="nav_drawer_txt_color">#444444</color>
+    <color name="check_mark_color">#03DAC5</color>
+    <color name="btn_cancel_unpressed">#ECECEC</color>
+    <color name="btn_cancel_pressed">#D9D9D9</color>
+    <color name="search_cursor_color">#16C3BB</color>
+    <color name="no_data_color">#005955</color>
+    <color name="change_img_btn_unpressed">#16C3BB</color>
+    <color name="change_img_btn_pressed">#14CFC7</color>
+
+
+    <color name="ucrop_color_toolbar">#028176</color>
+    <color name="ucrop_color_statusbar">#00786D</color>
+    <color name="ucrop_color_widget_active">@color/teal_700</color>
+    <color name="date_title_color">#0A0A0A</color>
+
+    <color name="spinner_item_chosen_unpressed_bg_color">#16C3BB</color>
+    <color name="spinner_item_chosen_pressed_bg_color">#1BD6CE</color>
+    <color name="spinner_checked_text_color">#EFEFEF</color>
+    <color name="spinner_text_color">#0A5956</color>
+
+    <color name="switcher_bg_checked_color">#2ECC72</color>
+    <color name="switcher_bg_not_checked_color">#F5F5F5</color>
+    <color name="switcher_toggle_checked_color">#F5F5F5</color>
+    <color name="switcher_toggle_not_checked_color">#018176</color>
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#9C27B0</item>
+    </style>
+</resources>

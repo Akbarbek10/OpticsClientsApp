@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_notification"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:background="?actionBarItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_notifications"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/counter_circle"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_notification"
+        app:layout_constraintTop_toBottomOf="@id/iv_notification"
+        app:layout_constraintTop_toTopOf="@+id/iv_notification">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F3564A">
+
+            <TextView
+                android:id="@+id/counter_circle_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

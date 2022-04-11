@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context=".fragments.main.NotificationsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        app:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/menu_read_all"
+            layout="@layout/menu_read_all" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_medium"
+            android:text="@string/tv_notifications"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_client_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:listitem="@layout/item_date" />
+
+    <TextView
+        android:id="@+id/tv_noNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_medium"
+        android:text="@string/tv_noNotifications"
+        android:textColor="@color/no_data_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_client_list"
+        app:layout_constraintEnd_toEndOf="@+id/rv_client_list"
+        app:layout_constraintStart_toStartOf="@+id/rv_client_list"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.4" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

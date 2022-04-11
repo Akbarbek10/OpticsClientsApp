@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Optika - mijozlar roʻyxati</string>
+
+    <string name="tv_settings">Sozlamalar</string>
+    <string name="tv_language">Tanlangan til</string>
+    <string name="tv_night_mode">Tungi rejim</string>
+    <string name="chosen_lang_txt">O`zbekcha</string>
+    <string name="add_title">Yangi mijozni qoʻshish</string>
+    <string name="edit_title">Tahrirlash</string>
+    <string name="all_clients_list">Barcha mijozlar roʻyxati</string>
+    <string name="search">Qidirish...</string>
+    <string name="client_list">Mijozlar roʻyxati</string>
+    <string name="additional">Qoʻshimcha</string>
+    <string name="exit">Chiqish</string>
+    <string name="choose_language">Tilni tanlang:</string>
+
+    <string name="product_name">Mahsulot nomi:</string>
+    <string name="product_dioptre">Dioptriya:</string>
+    <string name="product_purchase_date">Sotib olingan sanasi:</string>
+    <string name="product_wearing_time">Yaroqlilik muddati:</string>
+    <string name="product_note">Eslatma:</string>
+    <string name="client_edit">Oʻzgartirish</string>
+    <string name="client_call">Qoʻngʻiroq qilish</string>
+
+    <string name="full_name">Toʻliq ismi</string>
+    <string name="date_of_birth">Tugʻilgan sanasi:</string>
+    <string name="date_of_birth_hint">Tugʻilgan sanasi</string>
+    <string name="enter_full_name">Toʻliq ismini kiriting...</string>
+    <string name="phone_num">Telefon raqami</string>
+    <string name="gender">Jinsi:</string>
+    <string name="gender_male">Erkak</string>
+    <string name="gender_female">Ayol</string>
+    <string name="product_expiration_days">Muddati (kunlarda kiriting)</string>
+    <string name="enter_product_name">Mahsulot nomini kiriting...</string>
+    <string name="enter_dioptre">Diopterni kiriting...</string>
+    <string name="enter_wearing_time">Yaroqlilik muddatini kiriting...</string>
+    <string name="enter_note">Eslatmani kiriting...</string>
+    <string name="toast_added">Qoʻshildi</string>
+    <string name="dialog_delete">Oʻchirish</string>
+    <string name="dialog_cancel">Bekor qilish</string>
+    <string name="dialog_delete_desc">Ushbu mijozni roʻyxatdan oʻchirib tashlamoqchimisiz?</string>
+    <string name="error_enter_fullname">Toʻliq ismini kiriting</string>
+    <string name="error_enter_phone_number">Telefon raqamini kiriting</string>
+    <string name="error_enter_product_name">Mahsulot nomini kiriting</string>
+    <string name="error_enter_diopter">Diopterni kiriting</string>
+    <string name="error_enter_expiration_time">Yaroqlilik muddatini kiriting</string>
+    <string name="error_enter_days_number">Kunlar sonini kiriting</string>
+    <string name="days_left">Qolgan kunlar: </string>
+    <string name="expired">Muddati oʻtdi!</string>
+    <string name="days_txt">kun</string>
+    <string name="notification_txt">Bildirishnoma</string>
+    <string name="notification_message">\ - sizning qoʻngʻiroq kutmoqda.\</string>
+    <string name="toast_edited">Oʻzgartirildi</string>
+    <string name="empty_txt">(boʻsh)</string>
+    <string name="no_data">Roʻyxat boʻsh...</string>
+    <string name="no_data_search">Hech narsa topilmadi...</string>
+    <string name="delete_img_title">Rasmni oʻchirib tashlash</string>
+    <string name="delete_img_desc">Rasmni oʻchirib tashlamoqchimisiz?</string>
+    <string name="tv_noNotifications">Bildirishnoma yoʻq...</string>
+    <string name="tv_date_today">Bugun</string>
+    <string name="tv_date_yesterday">Kecha</string>
+    <string name="tv_notifications">Bildirishnomar</string>
+    <string name="notification_birthday_message">Bugun %1$sʻning tugʻilgan kuni!</string>
+    <string name="tv_appearance">Koʻrinishi</string>
+
+
+    <string-array name="sort_list_options">
+        <item>Qoʻshilgan sanasi boʻyicha</item>
+        <item>Yaroqlilik muddati boʻyicha</item>
+        <item>Ism familiyasi boʻyicha</item>
+    </string-array>
+</resources>

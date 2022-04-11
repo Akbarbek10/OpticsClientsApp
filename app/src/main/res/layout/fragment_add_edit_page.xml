@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context=".fragments.main.AddEditPageFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_medium"
+        android:text="@string/add_title"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <com.loopeer.shadow.ShadowView
+                android:id="@+id/cv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundColor="@color/item_card_color"
+                app:cornerRadiusBL="14dp"
+                app:cornerRadiusBR="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shadowColor="@color/card_shadow_color"
+                app:shadowMarginBottom="4dp"
+                app:shadowRadius="4dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <View
+                        android:id="@+id/view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.92" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile_img"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_man_profile"
+                        app:layout_constraintBottom_toBottomOf="@+id/et_phoneNum"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintEnd_toEndOf="@+id/view_1"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@+id/view_1"
+                        app:layout_constraintTop_toTopOf="@+id/tv_fullname" />
+
+                    <LinearLayout
+                        android:id="@+id/btn_change_img"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/frame_change_style"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="14dp"
+                        android:paddingTop="6dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="6dp"
+                        app:layout_constraintEnd_toStartOf="@id/btn_delete_img"
+                        app:layout_constraintStart_toStartOf="@+id/iv_profile_img"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_profile_img">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_edit_img" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_delete_img"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/frame_delete_style"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="14dp"
+                        android:paddingTop="6dp"
+                        android:paddingEnd="14dp"
+                        android:paddingBottom="6dp"
+                        app:layout_constraintBottom_toBottomOf="@id/btn_change_img"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_profile_img"
+                        app:layout_constraintStart_toEndOf="@+id/btn_change_img"
+                        app:layout_constraintTop_toTopOf="@+id/btn_change_img">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_delete_img" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_fullname"
+                        style="@style/MyEditTextTitleStyle"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/full_name"
+                        app:layout_constraintEnd_toEndOf="@+id/et_fullname"
+                        app:layout_constraintStart_toStartOf="@+id/et_fullname"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/et_fullname"
+                        style="@style/MyEditTextStyle"
+                        android:layout_marginStart="16dp"
+                        android:drawableStart="@drawable/ic_user_add"
+                        android:hint="@string/enter_full_name"
+                        android:inputType="text"
+                        android:maxLength="128"
+                        app:layout_constraintEnd_toEndOf="@+id/view_1"
+                        app:layout_constraintStart_toEndOf="@+id/iv_profile_img"
+                        app:layout_constraintTop_toBottomOf="@id/tv_fullname" />
+
+
+                    <TextView
+                        android:id="@+id/tv_phoneNum"
+                        style="@style/MyEditTextTitleStyle"
+                        android:text="@string/phone_num"
+                        app:layout_constraintEnd_toEndOf="@+id/et_fullname"
+                        app:layout_constraintStart_toStartOf="@+id/et_fullname"
+                        app:layout_constraintTop_toBottomOf="@id/et_fullname" />
+
+
+                    <!--                    <br.com.sapereaude.maskedEditText.MaskedEditText-->
+                    <!--                        android:id="@+id/et_phoneNum"-->
+                    <!--                        android:layout_width="0dp"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="4dp"-->
+                    <!--                        android:background="@drawable/custom_input_style"-->
+                    <!--                        android:drawableStart="@drawable/ic_call_add"-->
+                    <!--                        android:drawablePadding="8dp"-->
+                    <!--                        android:fontFamily="@font/opensans_medium"-->
+                    <!--                        android:gravity="center_vertical"-->
+                    <!--                        android:hint="901234567"-->
+                    <!--                        android:inputType="phone"-->
+                    <!--                        android:paddingStart="12dp"-->
+                    <!--                        android:paddingTop="10dp"-->
+                    <!--                        android:paddingEnd="12dp"-->
+                    <!--                        android:paddingBottom="10dp"-->
+                    <!--                        android:singleLine="true"-->
+                    <!--                        android:textColor="@color/et_txt_color"-->
+                    <!--                        android:textColorHint="@color/et_hint_txt_color"-->
+                    <!--                        android:textSize="14sp"-->
+                    <!--                        app:keep_hint="false"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="@+id/tv_phoneNum"-->
+                    <!--                        app:layout_constraintStart_toStartOf="@+id/tv_phoneNum"-->
+                    <!--                        app:layout_constraintTop_toBottomOf="@+id/tv_phoneNum"-->
+                    <!--                        mask:allowed_chars="1234567890"-->
+                    <!--                        mask:mask="+998 ## ### ## ##" />-->
+
+                    <EditText
+                        android:id="@+id/et_phoneNum"
+                        style="@style/MyEditTextStyle"
+                        android:digits="1234567890"
+                        android:drawableStart="@drawable/ic_call_add"
+                        android:hint="+998 90 123-45-67"
+                        android:inputType="phone"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_phoneNum"
+                        app:layout_constraintStart_toStartOf="@+id/tv_phoneNum"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_phoneNum" />
+
+                    <TextView
+                        android:id="@+id/tv_dateOfBirth"
+                        style="@style/MyEditTextTitleStyle"
+                        android:text="@string/date_of_birth"
+                        app:layout_constraintStart_toStartOf="@+id/et_phoneNum"
+                        app:layout_constraintTop_toBottomOf="@+id/et_phoneNum" />
+
+                    <TextView
+                        android:id="@+id/et_dateOfBirth"
+                        style="@style/MyEditTextStyle"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_calendar"
+                        android:hint="@string/date_of_birth_hint"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_fullname"
+                        app:layout_constraintStart_toStartOf="@id/tv_dateOfBirth"
+                        app:layout_constraintTop_toBottomOf="@id/tv_dateOfBirth" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_clear_date"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="6dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_clear"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/et_dateOfBirth"
+                        app:layout_constraintEnd_toEndOf="@+id/et_dateOfBirth"
+                        app:layout_constraintTop_toTopOf="@+id/et_dateOfBirth" />
+
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        style="@style/MyEditTextTitleStyle"
+                        android:layout_marginTop="14dp"
+                        android:focusableInTouchMode="true"
+                        android:text="@string/gender"
+                        app:layout_constraintEnd_toEndOf="@+id/view_1"
+                        app:layout_constraintStart_toStartOf="@+id/view_1"
+                        app:layout_constraintTop_toBottomOf="@id/et_dateOfBirth" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_gender_group"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_gender"
+                        app:layout_constraintStart_toStartOf="@+id/tv_gender"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_gender">
+
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            style="@style/MyRadioBtnStyle"
+                            android:background="@drawable/male_radio_btn_selector"
+                            android:checked="true"
+                            android:text="@string/gender_male"
+                            android:textColor="@drawable/radio_btn_text_color" />
+
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            style="@style/MyRadioBtnStyle"
+                            android:background="@drawable/female_radio_btn_selector"
+                            android:text="@string/gender_female"
+                            android:textColor="@drawable/radio_btn_text_color" />
+                    </RadioGroup>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.loopeer.shadow.ShadowView>
+
+
+            <com.loopeer.shadow.ShadowView
+                android:id="@+id/cv_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:backgroundColor="@color/item_card_color"
+                app:cornerRadius="14dp"
+                app:layout_constraintTop_toBottomOf="@id/cv_1"
+                app:shadowColor="@color/card_shadow_color"
+                app:shadowMarginBottom="4dp"
+                app:shadowMarginTop="4dp"
+                app:shadowRadius="4dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp">
+
+                    <View
+                        android:id="@+id/view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.9" />
+
+
+                    <TextView
+                        android:id="@+id/tv_productName"
+                        style="@style/MyEditTextTitleStyle"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/product_name"
+                        app:layout_constraintEnd_toEndOf="@+id/et_productName"
+                        app:layout_constraintStart_toStartOf="@+id/et_productName"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/et_productName"
+                        style="@style/MyEditTextStyle"
+                        android:layout_marginEnd="12dp"
+                        android:ellipsize="end"
+                        android:hint="@string/enter_product_name"
+                        android:inputType="text"
+                        android:maxLength="128"
+                        app:layout_constraintEnd_toStartOf="@id/et_dioptre"
+                        app:layout_constraintStart_toStartOf="@id/view_2"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_productName" />
+
+                    <TextView
+                        android:id="@+id/tv_dioptre"
+                        style="@style/MyEditTextTitleStyle"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/product_dioptre"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_productName"
+                        app:layout_constraintEnd_toEndOf="@+id/et_dioptre"
+                        app:layout_constraintStart_toStartOf="@+id/et_dioptre"
+                        app:layout_constraintTop_toTopOf="@+id/tv_productName" />
+
+
+                    <EditText
+                        android:id="@+id/et_dioptre"
+                        style="@style/MyEditTextStyle"
+                        android:layout_marginStart="12dp"
+                        android:ellipsize="end"
+                        android:hint="@string/enter_dioptre"
+                        android:inputType="text"
+                        android:maxLength="64"
+                        app:layout_constraintEnd_toEndOf="@+id/view_2"
+                        app:layout_constraintStart_toEndOf="@+id/et_productName"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_productName" />
+
+
+                    <TextView
+                        android:id="@+id/tv_purchase_date"
+                        style="@style/MyEditTextTitleStyle"
+                        android:text="@string/product_purchase_date"
+                        app:layout_constraintEnd_toEndOf="@+id/et_purchase_date"
+                        app:layout_constraintStart_toStartOf="@+id/tv_productName"
+                        app:layout_constraintTop_toBottomOf="@id/et_productName" />
+
+
+                    <TextView
+                        android:id="@+id/et_purchase_date"
+                        style="@style/MyEditTextStyle"
+                        android:layout_height="0dp"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_calendar"
+                        android:drawableEnd="@drawable/ic_arrow_down"
+                        android:focusable="true"
+                        android:hint="Дата покупки"
+                        android:paddingEnd="4dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/et_wearing_time"
+                        app:layout_constraintEnd_toEndOf="@+id/et_productName"
+                        app:layout_constraintStart_toStartOf="@+id/et_productName"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_wearing_time" />
+
+
+                    <TextView
+                        android:id="@+id/tv_wearing_time"
+                        style="@style/MyEditTextTitleStyle"
+                        android:text="@string/product_expiration_days"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_purchase_date"
+                        app:layout_constraintEnd_toEndOf="@+id/et_wearing_time"
+                        app:layout_constraintStart_toStartOf="@+id/et_wearing_time"
+                        app:layout_constraintTop_toBottomOf="@+id/et_dioptre" />
+
+
+                    <EditText
+                        android:id="@+id/et_wearing_time"
+                        style="@style/MyEditTextStyle"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_timer"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:hint="@string/enter_wearing_time"
+                        android:inputType="phone"
+                        android:maxLength="8"
+                        app:layout_constraintEnd_toEndOf="@+id/et_dioptre"
+                        app:layout_constraintStart_toStartOf="@+id/et_dioptre"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_wearing_time" />
+
+
+                    <TextView
+                        android:id="@+id/tv_notes"
+                        style="@style/MyEditTextTitleStyle"
+                        android:text="@string/product_note"
+                        app:layout_constraintEnd_toEndOf="@+id/et_wearing_time"
+                        app:layout_constraintStart_toStartOf="@+id/tv_productName"
+                        app:layout_constraintTop_toBottomOf="@+id/et_purchase_date" />
+
+                    <EditText
+                        android:id="@+id/et_notes"
+                        style="@style/MyEditTextStyle"
+                        android:gravity="top"
+                        android:hint="@string/enter_note"
+                        android:maxLength="1000"
+                        android:maxLines="8"
+                        android:minLines="5"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:singleLine="false"
+                        app:layout_constraintEnd_toEndOf="@+id/view_2"
+                        app:layout_constraintStart_toStartOf="@+id/view_2"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_notes" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.loopeer.shadow.ShadowView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_color"
+    tools:context=".fragments.auth.SignInFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_glasses"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/lobster_regular"
+        android:text="320dp port"
+        android:textColor="#444444"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
+        app:layout_constraintTop_toTopOf="@id/iv_logo" />
+
+    <TextView
+        android:id="@+id/tv_logo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Добро пожаловать!"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Войдите, чтобы продолжить"
+        android:textColor="#E3E1E1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/roundView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:elevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fullname"
+        app:layout_constraintVertical_bias="1"
+        app:shape_roundRect_topLeftRadius="28dp"
+        app:shape_roundRect_topRightRadius="28dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7FAFE">
+
+
+           <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.1"
+                android:fontFamily="@font/merriweather_regular"
+                android:text="Логин"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/et_login"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:layout_constraintWidth_percent="0.8"
+                android:background="@drawable/custom_input_style"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/merriweather_regular"
+                android:hint="Введите ваш логин..."
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_login" />
+
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.04"
+                android:fontFamily="@font/merriweather_regular"
+                android:text="Пароль"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/et_login"
+                app:layout_constraintTop_toBottomOf="@id/et_login" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/custom_input_style"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/merriweather_regular"
+                android:hint="Введите ваш пароль..."
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/et_login"
+                app:layout_constraintStart_toStartOf="@+id/et_login"
+                app:layout_constraintTop_toBottomOf="@id/tv_password" />
+
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_style"
+                android:fontFamily="@font/merriweather_regular"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Войти"
+                android:textAllCaps="false"
+                android:textColor="#F7FAFE"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_password"
+                app:layout_constraintVertical_bias="0.7"
+                app:layout_constraintWidth_percent="0.45" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

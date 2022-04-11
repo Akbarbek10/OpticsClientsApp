@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Оптика - список клиентов</string>
+
+    <string name="tv_settings">Настройки</string>
+    <string name="tv_language">Язык</string>
+    <string name="tv_night_mode">Ночной режим</string>
+    <string name="chosen_lang_txt">Русский</string>
+    <string name="add_title">Добавить нового клиента</string>
+    <string name="all_clients_list">Список всех клиентов</string>
+    <string name="search">Поиск...</string>
+    <string name="client_list">Список клиентов</string>
+    <string name="additional">Дополнительное</string>
+    <string name="exit">Выход</string>
+    <string name="choose_language">Выберите язык:</string>
+    <string name="product_name">Название:</string>
+    <string name="product_dioptre">Диоптрия:</string>
+    <string name="product_purchase_date">Дата покупки:</string>
+    <string name="product_wearing_time">Срок ношения:</string>
+    <string name="product_note">Заметка:</string>
+    <string name="client_edit">Редактировать</string>
+    <string name="client_call">Позвонить</string>
+    <string name="full_name">Полное ФИО</string>
+    <string name="date_of_birth">Дата рождения:</string>
+    <string name="date_of_birth_hint">Дата рождения</string>
+    <string name="enter_full_name">Введите ФИО...</string>
+    <string name="phone_num">Номер телефона</string>
+    <string name="gender">Пол:</string>
+    <string name="gender_male">Мужчина</string>
+    <string name="gender_female">Женщина</string>
+    <string name="product_expiration_days">Срок ношения (в днях)</string>
+    <string name="enter_product_name">Введите название продукта...</string>
+    <string name="enter_dioptre">Введите диоптрию...</string>
+    <string name="enter_wearing_time">Срок ношения</string>
+    <string name="enter_note">Введите заметку...</string>
+    <string name="edit_title">Редактирование</string>
+    <string name="toast_added">Добавлено</string>
+    <string name="dialog_delete">Удалить</string>
+    <string name="dialog_cancel">Отменить</string>
+    <string name="dialog_delete_desc">Вы уверены, что хотите удалить этого клиента из списка?</string>
+    <string name="error_enter_fullname">Введите ФИО</string>
+    <string name="error_enter_phone_number">Введите номер телефона</string>
+    <string name="error_enter_product_name">Введите название продукта</string>
+    <string name="error_enter_diopter">Введите диоптрию</string>
+    <string name="error_enter_expiration_time">Введите срок ношения</string>
+    <string name="error_enter_days_number">Введите кол-во дней</string>
+    <string name="days_left">Осталось дней: </string>
+    <string name="expired">Срок истек!</string>
+    <string name="days_txt">дн.</string>
+    <string name="notification_txt">Уведомление</string>
+    <string name="notification_message">\ - ждёт вашего звонка.\</string>
+    <string name="toast_edited">Изменено</string>
+    <string name="empty_txt">(пусто)</string>
+    <string name="no_data">Список пустой...</string>
+    <string name="no_data_search">Ничего не найдено...</string>
+    <string name="delete_img_title">Удалить фотографию</string>
+    <string name="delete_img_desc">Вы точно хотите удалить фото?</string>
+    <string name="tv_noNotifications">Нет уведомлений...</string>
+    <string name="tv_date_today">Сегодня</string>
+    <string name="tv_date_yesterday">Вчера</string>
+    <string name="tv_notifications">Уведомления</string>
+    <string name="notification_birthday_message">Сегодня у %1$s день рождение!</string>
+    <string name="tv_appearance">Вид</string>
+
+
+    <string-array name="sort_list_options">
+        <item>По дате добавления</item>
+        <item>По сроку ношения</item>
+        <item>По ФИО</item>
+    </string-array>
+</resources>
